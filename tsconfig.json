@@ -1,0 +1,18 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["src/**/*", "src/**/*.vue"],
+  "exclude": [],
+  "compilerOptions": {
+    "verbatimModuleSyntax": false,
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "vueCompilerOptions": {
+    "strictTemplates": true,
+    "fallthroughAttributes": true,
+    "dataAttributes": ["id","data-cy"]
+  }
+}
